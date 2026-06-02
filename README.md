@@ -28,3 +28,13 @@ open SimplyVitals.xcodeproj
 ```
 
 After opening in Xcode, set your development team and confirm HealthKit and WatchConnectivity capabilities are enabled for the iOS and watchOS targets.
+
+## Building Without A Mac
+
+The `.github/workflows/apple-build.yml` workflow builds the iPhone and Watch targets on GitHub's macOS runners.
+
+1. Push this repo to GitHub.
+2. Open the repository's **Actions** tab.
+3. Run **Apple Build** manually, or push to `main`/`master`.
+
+Standard GitHub-hosted runners are free for public repositories. Private repositories use the free minutes included with your GitHub plan, and macOS minutes are the expensive ones, so the workflow is intentionally short and build-only.
